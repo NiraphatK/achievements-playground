@@ -1,0 +1,11 @@
+config:
+  # Tables and long sentences are easier to read unwrapped.
+  MD013: false
+  # Badge images need <img width>.
+  MD033: false
+ignores:
+  - "node_modules/**"
+  # Upstream Contributor Covenant text, kept verbatim.
+  - "CODE_OF_CONDUCT.md"
+  # GitHub prefills this into the PR body, so it starts below the title.
+  - ".github/pull_request_template.md"
