@@ -1,0 +1,16 @@
+name: "Quickdraw practice \U0001F920"
+description: Practice opening and closing an issue. Close it within 5 minutes.
+title: "[Quickdraw] Practice opening and closing an issue"
+labels: ["quickdraw"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit this issue, then click **Close issue** within 5 minutes. Closed practice issues are not reviewed.
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Before you submit
+      options:
+        - label: I will close this issue myself within 5 minutes.
+          required: true

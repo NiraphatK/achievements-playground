@@ -1,0 +1,42 @@
+name: Achievement correction
+description: Something in the guide is wrong or outdated.
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: dropdown
+    id: achievement
+    attributes:
+      label: Achievement
+      options:
+        - Quickdraw
+        - Pull Shark
+        - YOLO
+        - Pair Extraordinaire
+        - Galaxy Brain
+        - Starstruck
+        - Public Sponsor
+        - Not earnable / retired
+        - Highlights
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong?
+      description: Quote the current text from the README.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What is correct?
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Evidence
+      description: A link to a profile, GitHub blog post, docs page, or community discussion.
+    validations:
+      required: true
